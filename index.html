@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Fundamentals Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Fundamentals Assignment Showcase</h1>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="#media">Media</a>
+            <a href="#table">Table</a>
+            <a href="#form">Form</a>
+            <a href="#js-basics">JS Basics</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Lists Section -->
+        <section>
+            <h2>Lists Demo</h2>
+            <ol>
+                <li>Finish HTML assignment</li>
+                <li>Practice CSS basics</li>
+                <li>Review JavaScript</li>
+            </ol>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+            <dl>
+                <dt>HTML</dt>
+                <dd>The structure of web pages.</dd>
+                <dt>CSS</dt>
+                <dd>Styles web pages.</dd>
+                <dt>JavaScript</dt>
+                <dd>Adds interactivity to web pages.</dd>
+            </dl>
+            <ol>
+                <li>Frontend
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>Backend
+                    <ul>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Media Section</h2>
+            <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Laptop on desk" class="styled-img">
+            <figure>
+                <video width="340" height="200" controls class="styled-video">
+                    <source src="https://videos.pexels.com/video-files/856647/856647-hd_1920_1080_25fps.mp4" type="video/mp4">
+                    Your browser does not support videos.
+                </video>
+                <figcaption>Sample Study Video</figcaption>
+            </figure>
+            <audio controls class="styled-audio">
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+                Your browser does not support audio playback.
+            </audio>
+        </section>
+
+        <!-- Table Section -->
+        <section id="table">
+            <h2>Attendance Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Present</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Yes</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Ben</td>
+                        <td>No</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Chloe</td>
+                        <td>Yes</td>
+                        <td>UK</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>HTML5 Form</h2>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" required minlength="2" placeholder="Enter your name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Enter your email">
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="1" max="120" required>
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+                <br>
+                <label for="country">Country:</label>
+                <select name="country" id="country" required>
+                    <option value="">--Select--</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                </select>
+                <br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="Male" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female">Female</label>
+                <br>
+                <label for="profilepic">Upload Profile Picture:</label>
+                <input type="file" name="profilepic" id="profilepic" accept="image/*">
+                <br>
+                <label for="bio">Short Bio:</label>
+                <textarea name="bio" id="bio" cols="30" rows="3" minlength="10" maxlength="200" placeholder="Write something about yourself..."></textarea>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required minlength="6" placeholder="At least 6 characters">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <!-- Flexbox Card Section -->
+        <section>
+            <h2>Featured Cards (Flexbox)</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Project One</h3>
+                    <p>Responsive card using Flexbox.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Two</h3>
+                    <p>Cards adjust on different screen sizes.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Three</h3>
+                    <p>Easy to arrange with Flexbox.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid Gallery Section -->
+        <section>
+            <h2>Gallery (CSS Grid)</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">1</div>
+                <div class="gallery-item">2</div>
+                <div class="gallery-item">3</div>
+                <div class="gallery-item">4</div>
+                <div class="gallery-item">5</div>
+                <div class="gallery-item">6</div>
+            </div>
+        </section>
+
+        <!-- JavaScript Assignment Section -->
+        <section id="js-basics">
+            <h2>JavaScript Fundamentals</h2>
+            <h3>Variables & Conditionals</h3>
+            <label for="ageInput">Enter your age:</label>
+            <input type="number" id="ageInput" min="0">
+            <button id="checkAgeBtn">Check</button>
+            <p id="ageResult"></p>
+            <h3>Functions</h3>
+            <input type="number" id="num1" value="0">
+            <input type="number" id="num2" value="0">
+            <button id="sumBtn">Add Numbers</button>
+            <p id="sumResult"></p>
+            <button id="greetBtn">Greet</button>
+            <p id="greetResult"></p>
+            <h3>Loops</h3>
+            <button id="showNumbersBtn">Show 1-5</button>
+            <ul id="numbersList"></ul>
+            <button id="countdownBtn">Countdown</button>
+            <p id="countdownResult"></p>
+            <h3>DOM Manipulation</h3>
+            <button id="toggleColorBtn">Toggle Color</button>
+            <button id="addListItemBtn">Add List Item</button>
+            <ul id="dynamicList">
+                <li>First item</li>
+            </ul>
+            <button id="changeHeaderBtn">Change Header</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
